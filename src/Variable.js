@@ -1,5 +1,5 @@
 'use strict';//에러를 잡아주는 코드? 그냥 선언해 주고 시작하자
-//1.Variable 변수
+//1.Variable `변수
 {
     let name=`주동호`;
     console.log(name);
@@ -47,3 +47,6 @@ const Human={
     name:`Dong`,
     age:10
 };
+x=0
+console.log(x += 1)
+console.log(x++)
