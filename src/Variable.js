@@ -40,3 +40,14 @@ var paragraphs=document.getElementsByTagName('p');
 console.log(paragraphs);
 //css 선택자로 가져오기
 var mylist2=document.querySelector(".List li")
+//------------------------------------------------------------------
+firstTitle.style.color="red";
+
+//배열로 나와서 지정해 줘야됨
+myList[1].style.display="none";
+//배열로 나와서 지정해 줘야됨
+paragraphs[0].style.color="red";
+//그렇기 때문에 반복문을 사용함!
+for (var i=0; paragraphs.length; i++){
+    paragraphs[i].style.color="red";
+}
