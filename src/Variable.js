@@ -30,24 +30,41 @@
 //------------------------------------------------------------------
 //선택자 선정!
 //ID타이틀 가져오기!
-var firstTitle=document.getElementById('title');
-console.log(firstTitle);
-//Class 가져오기
-var myList=document.getElementsByClassName("list");
-console.log(myList);
-//태그명으로 가져오기!
-var paragraphs=document.getElementsByTagName('p');
-console.log(paragraphs);
-//css 선택자로 가져오기
-var mylist2=document.querySelector(".List li")
+// var firstTitle=document.getElementById('title');
+// console.log(firstTitle);
+// //Class 가져오기
+// var myList=document.getElementsByClassName("list");
+// console.log(myList);
+// //태그명으로 가져오기!
+// var paragraphs=document.getElementsByTagName('p');
+// console.log(paragraphs);
+// //css 선택자로 가져오기
+// var mylist2=document.querySelector(".List li")
 //------------------------------------------------------------------
-firstTitle.style.color="red";
-
-//배열로 나와서 지정해 줘야됨
-myList[1].style.display="none";
-//배열로 나와서 지정해 줘야됨
-paragraphs[0].style.color="red";
-//그렇기 때문에 반복문을 사용함!
-for (var i=0; paragraphs.length; i++){
-    paragraphs[i].style.color="red";
+// firstTitle.style.color="red";
+//
+// //배열로 나와서 지정해 줘야됨
+// myList[1].style.display="none";
+// //배열로 나와서 지정해 줘야됨
+// paragraphs[0].style.color="red";
+// //그렇기 때문에 반복문을 사용함!
+// for (var i=0; paragraphs.length; i++){
+//     paragraphs[i].style.color="red";
+// }
+//------------------------------------------------------------------
+//이벤트
+var btn = document.getElementById("submit");
+var con = document.querySelector(".container")
+var log=function (){
+    btn.style.color="red",
+    alert("글씨 색깔이 바뀌었습니다");
 }
+var log1=function (){
+    document.write("마우스가 올라왔습니다");
+}
+var log2=function (){
+    document.write("마우스가 나갔습니다");
+}
+btn.addEventListener('click',log);
+con.addEventListener('mouseover',log1);
+con.addEventListener('mouseleave',log2);
